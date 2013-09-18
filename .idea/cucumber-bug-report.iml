@@ -11,6 +11,7 @@
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v2.12.1, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.8.0, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.0.2, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.14.2, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
   </component>
 </module>
 
