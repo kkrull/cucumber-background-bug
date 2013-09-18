@@ -4,7 +4,13 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, RVM: ruby-2.0.0-p247 [ascent]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber (v1.3.8, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.4, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gherkin (v2.12.1, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.8.0, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.0.2, RVM: ruby-2.0.0-p247 [cucumber-bug-report]) [gem]" level="application" />
   </component>
 </module>
 
