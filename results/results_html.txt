@@ -1,0 +1,49 @@
+#Output from `bundle exec cucumber features/buggy.feature --format html --out cucumber.html --format pretty`
+
+Feature: Background steps are running out of sync with steps in scenarios
+  Both scenarios fail when running `bundle exec cucumber features/buggy.feature --format html --out cucumber.html --format pretty`.
+  In that case, the Background step executes twice before the first step in the first Scenario.
+  
+  Making any one of the following changes causes both scenarios to pass:
+  - Running without HTML output: `bundle exec cucumber features/buggy.feature`.
+  - Move the Given step from Background and into each Scenario.
+  - Changing the Scenario Outline to a regular Scenario.
+
+  Background:                                    # features/buggy.feature:10
+    Given I do some initialization in background # features/step_definitions/buggy_steps.rb:1
+
+  Scenario: A regular scenario that does some scenario-specific setup                 # features/buggy.feature:13
+    Given I do some initialization in regular_scenario                                # features/step_definitions/buggy_steps.rb:1
+    Then the completed initialization steps should be background and regular_scenario # features/step_definitions/buggy_steps.rb:6
+      
+      expected: ["background", "regular_scenario"]
+           got: ["background", "background", "regular_scenario"]
+      
+      (compared using eql?)
+       (RSpec::Expectations::ExpectationNotMetError)
+      ./features/step_definitions/buggy_steps.rb:7:in `/^the completed initialization steps should be ([^"]+) and ([^"]+)$/'
+      features/buggy.feature:15:in `Then the completed initialization steps should be background and regular_scenario'
+
+  Scenario Outline: A scenario outline that does some scenario-specific setup              # features/buggy.feature:17
+    Given I do some initialization in <initialization_step>                                # features/step_definitions/buggy_steps.rb:1
+    Then the completed initialization steps should be background and <initialization_step> # features/step_definitions/buggy_steps.rb:6
+
+    Examples: 
+      | initialization_step |
+      | scenario_outline    |
+      
+      expected: ["background", "scenario_outline"]
+           got: ["scenario_outline"]
+      
+      (compared using eql?)
+       (RSpec::Expectations::ExpectationNotMetError)
+      ./features/step_definitions/buggy_steps.rb:7:in `/^the completed initialization steps should be ([^"]+) and ([^"]+)$/'
+      features/buggy.feature:19:in `Then the completed initialization steps should be background and <initialization_step>'
+
+Failing Scenarios:
+cucumber features/buggy.feature:13 # Scenario: A regular scenario that does some scenario-specific setup
+cucumber features/buggy.feature:17 # Scenario: A scenario outline that does some scenario-specific setup
+
+2 scenarios (2 failed)
+6 steps (2 failed, 4 passed)
+0m0.014s

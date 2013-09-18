@@ -1,0 +1,42 @@
+#Output from `rvm info`
+
+ruby-2.0.0-p247@cucumber-bug-report:
+
+  system:
+    uname:       "Linux MachineName 3.5.0-40-generic #62~precise1-Ubuntu SMP Fri Aug 23 17:38:26 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux"
+    system:      "ubuntu/12.04/x86_64"
+    bash:        "/bin/bash => GNU bash, version 4.2.25(1)-release (x86_64-pc-linux-gnu)"
+    zsh:         " => not installed"
+
+  rvm:
+    version:      "rvm 1.21.20 (version) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]"
+    updated:      "7 days 36 minutes 25 seconds ago"
+
+  ruby:
+    interpreter:  "ruby"
+    version:      "2.0.0p247"
+    date:         "2013-06-27"
+    platform:     "x86_64-linux"
+    patchlevel:   "2013-06-27 revision 41674"
+    full_version: "ruby 2.0.0p247 (2013-06-27 revision 41674) [x86_64-linux]"
+
+  homes:
+    gem:          "/path/to/home/.rvm/gems/ruby-2.0.0-p247@cucumber-bug-report"
+    ruby:         "/path/to/home/.rvm/rubies/ruby-2.0.0-p247"
+
+  binaries:
+    ruby:         "/path/to/home/.rvm/rubies/ruby-2.0.0-p247/bin/ruby"
+    irb:          "/path/to/home/.rvm/rubies/ruby-2.0.0-p247/bin/irb"
+    gem:          "/path/to/home/.rvm/rubies/ruby-2.0.0-p247/bin/gem"
+    rake:         "/path/to/home/.rvm/gems/ruby-2.0.0-p247@global/bin/rake"
+
+  environment:
+    PATH:         "/path/to/home/.rvm/gems/ruby-2.0.0-p247@cucumber-bug-report/bin:/path/to/home/.rvm/gems/ruby-2.0.0-p247@global/bin:/path/to/home/.rvm/rubies/ruby-2.0.0-p247/bin:/path/to/home/.rvm/bin:/path/to/home/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/java/jdk1.7.0_21/bin:/usr/local/apache-maven-3.0.5/bin:/usr/local/RubyMine-5.4.3.2.1/bin"
+    GEM_HOME:     "/path/to/home/.rvm/gems/ruby-2.0.0-p247@cucumber-bug-report"
+    GEM_PATH:     "/path/to/home/.rvm/gems/ruby-2.0.0-p247@cucumber-bug-report:/path/to/home/.rvm/gems/ruby-2.0.0-p247@global"
+    MY_RUBY_HOME: "/path/to/home/.rvm/rubies/ruby-2.0.0-p247"
+    IRBRC:        "/path/to/home/.rvm/rubies/ruby-2.0.0-p247/.irbrc"
+    RUBYOPT:      ""
+    gemset:       "cucumber-bug-report"
+
+
